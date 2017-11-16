@@ -1,0 +1,23 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:h="http://java.sun.com/jsf/html"
+xmlns:f="http://java.sun.com/jsf/core"
+xmlns:p="http://primefaces.org/ui">
+<head>
+<title>Insert title here</title>
+</head>
+<body>
+<h:form>           
+    <p:growl id="message" showDetail="true" />
+ 
+    <p:commandButton value="Destroy the World" actionListener="#{dialogView.destroyWorld}" update="message">
+        <p:confirm header="Confirmation" message="Are you sure?" icon="ui-icon-alert" />
+    </p:commandButton>
+    <p:commandButton value="Test"/>
+ hhhhhhhhhhh
+    <p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
+        <p:commandButton value="Yes" type="button" styleClass="ui-confirmdialog-yes" icon="ui-icon-check" />
+        <p:commandButton value="No" type="button" styleClass="ui-confirmdialog-no" icon="ui-icon-close" />
+    </p:confirmDialog>
+</h:form>
+</body>
+</html>
